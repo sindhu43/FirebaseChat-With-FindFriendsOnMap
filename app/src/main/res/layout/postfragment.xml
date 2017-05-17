@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/outerLinear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/innerLinear1">
+
+            <TextView
+                android:id="@+id/nickNameText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="2"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/NickName"/>
+            <EditText
+                android:id="@+id/nickNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/NickName"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/innerLinear8">
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="2"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/email"/>
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/innerLinear2">
+            <TextView
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="2"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/Password"/>
+            <EditText
+                android:id="@+id/passwordEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/Password"
+                android:layout_weight="1"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/innerLinear3">
+            <TextView
+                android:id="@+id/countryText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="2"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/Country"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/countryspin"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/innerLinear4">
+
+            <TextView
+                android:id="@+id/stateText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/State"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/statespin"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/innerLinear5">
+
+            <TextView
+                android:id="@+id/cityText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="2"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/City"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cityEdit"
+                android:hint="@string/cityPrompt"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/innerLinear6">
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="2"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/year"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/yearspin"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/innerLinear7">
+            <TextView
+                android:id="@+id/latlongText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/lat_long"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/latlongBtn"
+                android:layout_weight="2"
+                android:text="@string/set"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/save"
+            android:layout_gravity="bottom"
+            android:text="@string/saveData"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
